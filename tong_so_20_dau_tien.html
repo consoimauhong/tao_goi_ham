@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var n, t1 = 0, t2 = 1, nextTerm = 0, sum = 0;
+  n = parseInt(prompt("Moi nhap vao mot so"));
+  for (var i = 1; i <= n; i++){
+      if (i == 1){
+          //document.write(t1 + " ");
+          continue;
+      }
+      if (i == 2){
+          //document.write(t2 + " ");
+          continue;
+      }
+      nextTerm = t1 + t2;
+      t1 = t2;
+      t2 = nextTerm;
+
+      //document.write(nextTerm + " ");
+      sum = (t1 + t2 + nextTerm);
+      if (i == 21){
+          break;
+      }
+  }
+  document.write(sum);
+</script>
+
+</body>
+</html>

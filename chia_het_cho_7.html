@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var numbers = parseInt(prompt("Moi nhap vao mot so tu nhien bat ky"));
+  var sum = 0;
+  for (var i = 1; i<= numbers; i++){
+      if (i % 7 == 0)
+          sum+=i;
+      if (i == 31)
+          break;
+  }
+  document.write(sum);
+</script>
+
+</body>
+</html>

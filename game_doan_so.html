@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function do_sth(){
+      var nhapSo = parseInt(prompt("Nhap vao khoang so"))
+      var randomSo = Math.floor(Math.random() * nhapSo);
+      var doanSo;
+      for (var i = 1; i <= 5; i++){
+          doanSo = parseInt(prompt("Nhap vao so muon doan"));
+          if (doanSo < randomSo){
+              alert("So ban doan lon hon");
+              continue;
+          }
+          if (doanSo > randomSo){
+              alert("So ban doan nho hon");
+              continue;
+          }
+          if (doanSo == randomSo){
+              alert("Doan dung roi");
+              break;
+          }
+      }
+  }
+</script>
+</body>
+</html>
