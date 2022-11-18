@@ -6,23 +6,15 @@
 </head>
 <body>
 <script>
-    function checkNT() {
-        let count = 0;;
-        let n = parseInt(prompt("nhập số"));
-
-
-        for (let i = 1; i <= n; i++){
-            if(n % i === 0){
-                count += 1;
-            }
-        }
-        if (count == 2){
-            alert(n + " so nguyen tố");
-        }else {
-            alert(n + " không phải nguyên tố");
-        }
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        alert(result);
+        return result;
     }
-    checkNT();
+    result = 0;
+    result = addNumbers();
 
 </script>
 </body>
