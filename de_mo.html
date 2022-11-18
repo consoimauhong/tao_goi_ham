@@ -6,15 +6,14 @@
 </head>
 <body>
 <script>
-    function addNumbers() {
-        firstNum = 4;
-        secondNum = 8;
-        result = firstNum + secondNum;
-        alert(result);
-        return result;
-    }
-    result = 0;
-    result = addNumbers();
+    let number = prompt("");
+function square(number) {
+let result = number * number;
+return result;
+}
+let squareOf = square(number);
+document.getElementById("demo").innerHTML = squareOf;
+
 
 </script>
 </body>
